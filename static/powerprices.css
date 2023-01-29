@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* BASE FILTERS SECTION */
+
+
+/* MAP SECTION */
+
+#europe-map-chart {
+    width: 1100px;
+    height: 600px;
+    resize: both;
+}
+
+svg {
+    width: 95%;
+    height: 95%;
+}
+
+.additionalStuff g {
+    cursor: pointer;
+}
+
+/* TABLE SECTION */
+
+#paging {
+    font-size: clamp(0.9rem, 1.3vw, 2rem);
+}
+
+#europe-table-chart {
+    font-size: clamp(0.6rem, 0.82vw, 2rem);
+}
+
+#paging {
+    gap: 0.3rem;
+}
+
+.table.dc-data-grid {
+    max-width: 800px;
+}
+
+.table.dc-data-grid td, .table.dc-data-grid thead th {
+    border: 1px solid #f8f9fa;
+    text-align: center;
+    min-width: 50px;
+    white-space: pre-wrap;
+    width: 1%;
+}
+
+.dc-table-section {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--bs-table-striped-color);
+}
+
+/* MEDIA SCREENS */
+
+@media only screen and (min-width: 1400px) {
+    section:nth-child(3) > div {
+        max-width: 100%;
+    }    
+}
+
+@media only screen and (max-width: 575px) {
+    section:nth-child(1) > form > label, #ddate {
+        width: 100%;
+    }    
+}
